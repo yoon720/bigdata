@@ -1,6 +1,7 @@
 # Foundation of Big Data Analysis
 Data mining algorithms implemented in python (+pyspark)
 
+** add brief explanation for each part **
 ## 1. Finding potential friends (PySpark)
 ## 2. A-priori: Frequent item
 ## 3. LSH: Finding similar documents
