@@ -1,4 +1,5 @@
 # Foundation of Big Data Analysis
+Data mining algorithms implemented in python (+pyspark)
 
 ## 1. Finding potential friends (PySpark)
 ## 2. A-priori: Frequent item
