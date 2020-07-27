@@ -1,7 +1,7 @@
 # Foundation of Big Data Analysis
 Data mining algorithms implemented in python (+pyspark)
 
-** add brief explanation for each part **
+adding  brief explanation for each part
 ## 1. Finding potential friends (PySpark)
 * Discover potential friends who have many mutual friends using a real dataset containing a LiveJournal friends graph.
 ### Algorithm
