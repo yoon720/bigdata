@@ -30,6 +30,13 @@ Data mining algorithms implemented in python (+pyspark)
 * Larger frequent itemsets then pairs can be found by repeating algorithm
 
 ## 3. LSH: Finding similar documents
+* Find similar items using minhash signatures
+* Divide signature matrix into *b* bands of *r* rows each
+* For each band, there is hash function on *r* integers
+* Use the characteristic that similar columns are more likely to be identical in some band
+* Ih this version of implementation, I used 3-shingles to make minhash signatures and b=6, r=20 for LSH algorithm
+  - Pr(signatures agree in all rows of at least one band and thus become a candidate pair) = 1-(1-*s<sup>r*)<sup>b
+
 ## 4. K-means algorithm (PySpark)
 ## 5. Collaborative filtering
 ## 6. PageRank algorithm (PySpark)
