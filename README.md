@@ -17,16 +17,16 @@ Data mining algorithms implemented in python (+pyspark)
 * A-priori : an algorithm for finding frequent item. good at avoiding counting many triples or larger sets
 ### Algorithm
 1. pass 1: make two tables
-  - Table 1: translate item names to integers 1,...,*n*
-  - Table 2: array of counts for n items initialized to 0
+    - Table 1: translate item names to integers 1,...,*n*
+    - Table 2: array of counts for n items initialized to 0
 1. between pass 1 & 2
-  - find singletons with support >= *s
-  - create new numbering 1,...,*m* for frequent items
-  - create *frequent-items* table indexed 1,..,*n* where *i*th entry is 0 if item *i* is not frequent or a unique integer in 1,..,*m* otherwise
+    - find singletons with support >= *s
+    - create new numbering 1,...,*m* for frequent items
+    - create *frequent-items* table indexed 1,..,*n* where *i*th entry is 0 if item *i* is not frequent or a unique integer in 1,..,*m* otherwise
 1. pass 2: find pairs
-  - for each basket, check which items are frequent
-  - generate all pairs of frequent items in basket
-  - for each such pair, increment count in data structure (triangular matrix or triples)  
+    - for each basket, check which items are frequent
+    - generate all pairs of frequent items in basket
+    - for each such pair, increment count in data structure (triangular matrix or triples)  
 * Larger frequent itemsets then pairs can be found by repeating algorithm
 
 ## 3. LSH: Finding similar documents
