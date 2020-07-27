@@ -4,7 +4,7 @@ Data mining algorithms implemented in python (+pyspark)
 ** add brief explanation for each part **
 ## 1. Finding potential friends (PySpark)
 * Discover potential friends who have many mutual friends using a real dataset containing a LiveJournal friends graph.
-#### Algorithm
+### Algorithm
   1. 각 line을 (User, [list of friends])로 map
   2. User와 list of friend를 이용하여 직접 친구 관계인 두 명을 ((user, friend), 0)으로 flat map : **real**
   3. List of friends에 들어있는 사람들은 해당 User를 mutual friend로 두고 있으므로 List of friend 중에서 둘씩 조합하여 ((friend1, friend2), 1)로 flat map : **potential**
@@ -15,10 +15,10 @@ Data mining algorithms implemented in python (+pyspark)
 
 ## 2. A-priori: Frequent item
 * A-priori : an algorithm for finding frequent item. good at avoiding counting many triples or larger sets
-#### Algorithm
+### Algorithm
 1. pass 1: make two tables
-  * Table 1: translate item names to integers 1,...,*n*
-  * Table 2: array of counts for n items initialized to 0
+  &nbsp;&nbsp;- Table 1: translate item names to integers 1,...,*n*
+  - Table 2: array of counts for n items initialized to 0
 2. between pass 1 & 2
   - find singletons with support >= *s
   - create new numbering 1,...,*m* for frequent items
