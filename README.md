@@ -17,8 +17,8 @@ Data mining algorithms implemented in python (+pyspark)
 * A-priori : an algorithm for finding frequent item. good at avoiding counting many triples or larger sets
 #### Algorithm
 1. pass 1: make two tables
-  - Table 1: translate item names to integers 1,...,*n*
-  - Table 2: array of counts for n items initialized to 0
+  * Table 1: translate item names to integers 1,...,*n*
+  * Table 2: array of counts for n items initialized to 0
 2. between pass 1 & 2
   - find singletons with support >= *s
   - create new numbering 1,...,*m* for frequent items
